@@ -16,8 +16,11 @@ tagForm.addEventListener("submit", function(e){
     else{
         existingTagWarning.style.display = "none";
         submittedTags.push(tagInput.value);
+        const newPastille = document.createElement("div");
+        newPastille.classList.add("pastille");
+        newPastille.innerText = tagInput.value;
+        existingTagsContainerPastilles.appendChild(newPastille);
         tagForm.reset();
-        //existingTagsContainerPastilles
         existingTagsContainerText.innerText = `Tags : ${submittedTags.join(", ")}`;
     }
 });

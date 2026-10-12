@@ -3,3 +3,11 @@
     font-weight: bold;
     display: none;
 }
+#existingTagsContainerPastilles{
+    display: flex;
+    justify-content: space-around;
+}
+.pastille{
+    outline: solid, 3px, red;
+    background-color: gainsboro;
+}
