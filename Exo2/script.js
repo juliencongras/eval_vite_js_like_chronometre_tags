@@ -15,7 +15,7 @@ stopButton.addEventListener("click", function(){
     }
 
     const countUp = setInterval(function(){
-        stopwatch.innerText = timer
         timer++;
+        stopwatch.innerText = timer;
     }, 1000);
 });
